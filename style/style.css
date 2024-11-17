@@ -48,13 +48,14 @@
         font-family: 'Cera Pro';
         font-size: 15px;
     }
-    .sidebar ul li .active{
-
-    }
     .main-content {
         float: right;
         padding-left: 50px;
         max-width: 840px;
+    }
+
+    .baner_sidebar {
+        padding: 24px 4px;
     }
     
     .nav-tabs {
@@ -89,6 +90,10 @@
         border-bottom: 2px solid #27ae60;
         font-weight: 800;
     }
+    .nav-tabs a:hover {
+        color: #27ae60;
+        font-weight: bold;
+    }
     .nav_r a svg {
         vertical-align: middle;
         margin-top: 2px;
@@ -103,6 +108,7 @@
     }
     .item1{
         background-color: #FBFBFB;
+        position: relative;
     }
     .item2 h3{
         color: #3d3d3d;
@@ -138,3 +144,37 @@
             vertical-align: middle;
             margin-top: 2px;  
         }
+
+    .icon {
+        position: absolute;
+        bottom: 7px;
+        display: flex;
+        width: 100%;
+        gap: 10px;
+        justify-content: center;
+        opacity: 0;
+    }    
+
+    .icon a {
+        background-color: #fff;
+        padding: 8px;
+    }
+
+    .item1:hover .icon{
+        opacity: 1;
+    }
+    .icon a:hover svg path {
+        fill: #46A358;
+    }
+    
+
+    .sale {
+        position: absolute;
+        top: 8px;
+        font-family: 'Cera Pro';
+        font-size: 16px;
+        font-weight: bold;
+        color: #fff;
+        background-color: #27ae60;
+        padding: 7px 8px 8px 10px;
+    }
